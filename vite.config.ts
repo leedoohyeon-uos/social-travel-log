@@ -18,6 +18,7 @@ const geojsonPlugin: Plugin = {
 export default defineConfig(() => {
   return {
     plugins: [geojsonPlugin, react(), tailwindcss()],
+    base: '/social-travel-log/', // 이 줄을 추가하세요.
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
