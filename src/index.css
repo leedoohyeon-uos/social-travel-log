@@ -1,0 +1,68 @@
+@import "./design-tokens.css";
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  
+  html.dark {
+    color-scheme: dark;
+    background-color: #080808;
+    color: #E5E5E5;
+  }
+
+  html:not(.dark) {
+    color-scheme: light;
+    background-color: #F8F9FA;
+    color: #18191B;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Sophisticated Dark Theme Custom Classes */
+.theme-dark-card {
+  background-color: #121212;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.theme-dark-accent {
+  color: #C4A484;
+}
+
+.theme-dark-accent-bg {
+  background-color: #C4A484;
+}
+

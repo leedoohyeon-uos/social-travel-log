@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Social Travel Map",
+  "description": "지도를 중심으로 친구와 함께 여행 기록을 공유하고 추억을 남기는 소셜 여행 지도 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

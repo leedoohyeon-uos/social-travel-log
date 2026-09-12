@@ -1,0 +1,24 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Firebase & Firestore Configuration, Secrets, Rules & Metadata
+firebase-applet-config.json
+firebase-blueprint.json
+firestore.rules
+firestore.indexes.json
+storage.rules
+firebase.json
+.firebaserc
+*firebase*.json
+*firestore*.json
+*.rules
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
